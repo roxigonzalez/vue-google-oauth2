@@ -1,5 +1,5 @@
 {
-  "name": "vue-google-oauth2",
+  "name": "devro-fork-vue-google-oauth2",
   "version": "1.5.4",
   "description": "Handling Google Auth2 sign-in and sign-out",
   "main": "index.js",
