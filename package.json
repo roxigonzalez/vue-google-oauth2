@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guruahn/vue-google-oauth2.git"
+    "url": "git+https://github.com/roxigonzalez/vue-google-oauth2"
   },
   "keywords": [
     "vue",
@@ -25,7 +25,7 @@
   "author": "Jeongwoo Ahn <guruahn@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/guruahn/vue-google-oauth2/issues"
+    "url": "https://github.com/roxigonzalez/vue-google-oauth2/issues"
   },
-  "homepage": "https://github.com/guruahn/vue-google-oauth2#readme"
+  "homepage": "https://github.com/roxigonzalez/vue-google-oauth2#readme"
 }
