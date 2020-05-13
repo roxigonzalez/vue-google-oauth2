@@ -131,10 +131,12 @@ function installGoogleAuthPlugin(Vue, options) {
   let GoogleAuthConfig = null
   let GoogleAuthDefaultConfig = { scope: 'profile email', discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'] }
   let prompt = 'select_account'
+  let ux_mode = 'redirect'
   if (typeof options === 'object') {
     GoogleAuthConfig = Object.assign(GoogleAuthDefaultConfig, options)
     if (options.scope) GoogleAuthConfig.scope = options.scope
     if (options.prompt) prompt = options.prompt
+    if (options.ux_mode) ux_mode	= options.ux_mode
     if (!options.clientId) {
       console.warn('clientId is required')
     }
@@ -151,7 +153,7 @@ function installGoogleAuthPlugin(Vue, options) {
       }
     }
   })
-  Vue.gAuth.load(GoogleAuthConfig, prompt)
+  Vue.gAuth.load(GoogleAuthConfig, prompt, ux_mode)
 }
 
 export default installGoogleAuthPlugin
