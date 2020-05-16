@@ -19,7 +19,6 @@ var googleAuth = (function () {
 
   function initClient(config) {
     return new Promise((resolve, reject) => {
-      console.log(config)
       window.gapi.load('auth2', () => {
         window.gapi.auth2.init(config)
           .then(() => {
